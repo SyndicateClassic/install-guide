@@ -9,7 +9,6 @@ import os
 from urllib2 import urlopen
 
 SERVER_IP = urlopen('http://ip.42.pl/raw').read()
-NODE_LIST = urlopen('http://cdn.synx.online/ips').read()
 BOOTSTRAP_URL = "http://cdn.synx.online/bootstrap.zip"
 
 DEFAULT_COLOR = "\x1b[0m"
@@ -184,8 +183,7 @@ logtimestamps=1
 mnconflock=1
 masternode=1
 masternodeaddr={}:9999
-masternodeprivkey={}
-{}""".format(rpc_username, rpc_password, SERVER_IP, masternode_priv_key, NODE_LIST)
+masternodeprivkey={}""".format(rpc_username, rpc_password, SERVER_IP, masternode_priv_key)
 
     print_info("Saving config file...")
     f = open('/home/mn1/.Syndicate/Syndicate.conf', 'w')
@@ -234,8 +232,7 @@ logtimestamps=1
 mnconflock=1
 masternode=1
 masternodeaddr={}:{}
-masternodeprivkey={}
-{}""".format(rpc_username, rpc_password, BASE_RPC_PORT + xth - 1, BASE_PORT + xth - 1, SERVER_IP, BASE_PORT + xth - 1, masternode_priv_key, NODE_LIST)
+masternodeprivkey={}""".format(rpc_username, rpc_password, BASE_RPC_PORT + xth - 1, BASE_PORT + xth - 1, SERVER_IP, BASE_PORT + xth - 1, masternode_priv_key)
     
     print_info("Saving config file...")
     f = open('/home/mn{}/.Syndicate/Syndicate.conf'.format(xth), 'w')
