@@ -1,7 +1,7 @@
 # Announcements
 ### Do not forget step 4. It really means a lot to me. I realy appreciate it. Thanks!
 
-# ![Syndicate](https://raw.githubusercontent.com/u3mur4/syndicate/master/logo.png) Syndicate Guide
+# ![Syndicate](https://raw.githubusercontent.com/SyndicateLtd/install-guide/master/logo.png) Syndicate Guide
 
 Use this instruction and the youtube video to install the wallet, fix wallet issues and setup one/multiple masternode(s).
 This guide is for the creation of separate Controller Wallet & Masternode.
@@ -22,27 +22,15 @@ Your coins will be safe if the masternode server gets hacked.
 ## 1. Desktop Wallet Preparation <a href="https://www.youtube.com/watch?v=CtnJlrl-kU0" target="_blank"><img src="https://i.imgur.com/SY3eO38.png"></a>
 
 ### 1.1 Setup the wallet
-1. Download the [wallet](https://mega.nz/#!srpBkKyL!iUNsdLXDRiimHhkG-iNDFe8tEv5m70L1TWePHFnSkHQ)
+1. Download the [wallet](https://github.com/SyndicateLtd/SyndicateQT/releases/tag/v1.9.1)
 1. Start and Close the wallet. (creates the folder structure)
-1. Download [Syndicate_blockchain_2017_09_28.zip](https://transfer.sh/13BiaI/Syndicate_blockchain_2017_09_28.zip) bootstrap file. [mirror1](https://mega.nz/#!M3gjwTIY!3HQ_K6Wu98ekkoHPxURa9bjREh_SufhUFwlAnDy4fAg) [older chain](http://108.61.216.160/cryptochainer.chains/chains/Syndicate_blockchain.zip)
+1. Download [Syndicate_blockchain_2017_09_28.zip](http://cdn.synx.online/bootstrap.zip) bootstrap file. [mirror1](https://mega.nz/#!M3gjwTIY!3HQ_K6Wu98ekkoHPxURa9bjREh_SufhUFwlAnDy4fAg) [older chain](http://108.61.216.160/cryptochainer.chains/chains/Syndicate_blockchain.zip)
 1. Extract the zip file to `%appdata%/Syndicate/` folder. Override existing files!
-1. Add the following content to the `%appdata%/Syndicate/Syndicate.conf` file or use [this](https://pastebin.com/raw/p5r7zdaX) file that contains 110 active nodes.
 
-    ```
-    addnode=45.32.224.137:9999
-    addnode=149.56.183.161:9999
-    addnode=45.76.34.135:9999
-    addnode=104.238.184.213:9999
-    addnode=158.69.221.184:9999
-    addnode=45.76.140.201:9999
-    addnode=45.32.93.20:9999
-    addnode=45.76.46.76:9999
-    addnode=108.61.252.19:9999
-    ```
 
 1. Delete `%appdata%/Syndicate/peers.dat` file.
 1. Start the wallet and wait for the sync. (30min to 10h depending on the number of the connections)
-	
+
 ## 2. Masternode Setup <a href="https://www.youtube.com/watch?v=-Lt-ifQxS-w" target="_blank"><img src="https://i.imgur.com/SY3eO38.png"></a>
 
 ### 2.1 Send the coins to your wallet
@@ -62,12 +50,12 @@ Your coins will be safe if the masternode server gets hacked.
     - Server Size: 5$/mo, 1GB memory (This server is capable to run 3 masternodes. One masternode need 300-400Mb memory)
 
 ### 2.3 Automatic Masternode Setup
-- Note: Use [this](https://github.com/u3mur4/syndicate/blob/master/MANUAL_SETUP.md) instruction to manualy setup the server. That guide maybe outdated.
+- Note: Use [this](https://github.com/SyndicateLtd/install-guide/blob/master/MANUAL_SETUP.md) instruction to manualy setup the server. That guide maybe outdated.
 1. Download [putty](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.70-installer.msi)
 1. Start putty and login as root user. (Root password and server ip address is in vultr overview tab)
 1. Paste this command and answer the questions:
 ```
-wget https://raw.githubusercontent.com/u3mur4/syndicate/master/synx.py && python synx.py
+wget https://raw.githubusercontent.com/SyndicateLtd/install-guide/master/synx.py && python synx.py
 ```
 
 ### 2.4 Add masternode on the desktop wallet
@@ -116,5 +104,3 @@ Don't be shy, send a small amount of coin if you found this instruction (yt vide
 | SYNX | SNoGsL8Ej7DuYcx5v2Yy1HfXkMoZZmzEym  |
 | BTC  | 33CrDPyMpcwJFyMTceVMTLJYLR8zBSsnWm  |
 | ETH  | 0x9a794240b456B8dD5593a7e8d7AE92f4ca4D9D2f |
-
-	
